@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness freak</title>
+    <link rel="stylesheet" href="/css_jsevents.css">
+    <--CSS FILE OF Home page-->
+    <link rel="stylesheet" href="/public/css_jsevents.css">
+  
+    <--Additional css-->
+</head>
+<style>
+    .s{
+            right: 100px;
+            left: 100px;
+        }
+        .s input:hover{
+            border: 7px solid red;
+            background-color: red 2px;
+            /* background-color: red; */
+        }
+#c{
+    color: red;
+    /* background-color: red; */
+    font-family: 'Courier New', Courier, monospace;
+}
+    body {
+    background-color: aqua;
+    /* border: 2px solid red; */
+    font-family: cursive;
+    /* color: white; */
+    margin: 0px;
+    padding: 0px;
+    background: url('boxer-1984344_1920.jpg');
+    /* height:4545px; */
+
+}
+
+.left {
+    /* border: 5px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 22px;
+    margin: 18px;
+    border-radius: 10px;
+}
+.left img {
+    width: 12px;
+    /* border: 2px solid red; */
+    /* filter: invert(80%); */
+}
+
+.left div {
+    /* background-color: aliceblue; */
+    text-align: center;
+    line-height: 20px;
+}
+
+.mid {
+    /* border: 2px solid green; */
+    display: block;
+    width:75%;
+    margin: 3px auto;
+    /* z-index: 100px; */
+
+}
+h1{
+    position:relative;
+}
+h3{
+    background-color:red;
+}
+
+.right {
+    border: 2px solid yellow;
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 22px;
+    margin: 22px;
+}
+.center{
+    /* border: 2px solid red; */
+    display:block;
+    position:absolute;
+    top: 500px;
+    right:50px;
+    left: 700px;
+}
+.formgroup{
+    padding: 100px;
+    /* border: 2px solid aliceblue; */
+    border-radius:  20px; 
+    margin: 20px 20px;
+    /* display: block; */
+    position: center;
+    /* width: 500px; */
+    /* height: 300px; */
+    /* background-color: aliceblue; */
+    box-shadow: 10px;
+    /* border: 2px solid red; */
+}
+.formgroup input{
+    height: 30px;
+    display: block;
+    width: 1000px;
+    border-radius: 10px;
+    position: center;
+    box-shadow: 10px;
+    /* background-color: violet; */
+    /* position: fixed; */
+    margin: 5px 5px;
+    padding: 20px;
+    display: block;
+}
+.formgroup input{
+        display: flex;
+        /* border: 2px solid red; */
+    }
+    /* @media (max-width: 600px){ */
+        .formgroup input{
+            right: 100px;
+            left: 100px;
+        }
+        .formgroup input:hover{
+            border: 7px solid red;
+            /* background-color: red 2px; */
+            /* background-color: red; */
+        }
+        #c{
+            color: red;
+            /* background-color: red; */
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .navbar{
+            display: fixed;
+            list-style: none;
+        }
+.navbar li {
+    display: fixed;
+    margin: 10px;
+    width: 170px;
+    text-decoration: none;
+    padding: 50px;
+    height: 10px;
+    display: block;
+    padding: 10px;
+    display: inline-block;
+}
+.navbar li a{
+    
+    height: 50px;
+    text-align:left;
+    padding: 30px;
+    text-decoration: none;
+    height: 10px;
+    display: block;
+    /* background-color: aliceblue; */
+    padding: 10px;
+    /* background-color: red; */
+}
+.navbar li a:hover{
+    background-color: red;
+}
+    /* .header{
+        height:500px;
+        width: 100%;
+        display: inline-block;
+        background-color: brown;
+    }
+    .navbar{
+        position: center;
+        margin: 10px;
+        padding: 10px;
+        display: block;
+        /* display: inline-block; */
+    /* } */
+    .navbar li{
+        position: center;
+        display: inline-block;
+        text-decoration: none;
+    }
+    #r{
+        display: absolute;
+        margin: 10px;
+    }
+    @media (max-width:900px) {
+
+           .center{
+display: none;
+}
+        
+    .navbar {
+        display:list-item;
+    }
+    .navbar li{
+        margin: 0px;
+        display:list-item;
+    }
+    .formgroup input{
+        margin:0px;
+    height: 30px;
+    display:block;
+    width: 400px;
+    border-radius: 10px;
+    position: center;
+    box-shadow: 10px;
+    background-color:brown;
+    /* position: fixed; */
+    margin: 5px ;
+    padding: 10px;
+    display: block;
+}
+.formgroup{
+            right: 100px;
+            left: 100px;
+        }
+        .formgroup input:hover{
+            /* border: 7px solid red; */
+            /* background-color: red 2px; */
+            /* background-color: red; */
+        }
+#c{
+    /* color: red; */
+    /* background-color: red; */
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar li a{
+    background-color: aliceblue;
+}
+#r{
+    position: absolute;
+    margin: 10px;
+}
+}
+    /* } */
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div id="con">Time is</div>
+        <img src="/public/Capture.PNG" alt="wait">
+        <div class="mid">
+            <ul class="navbar">
+                <!-- <span >Today </span> <is> Date <span></span><li id=date></li> -->
+                <li><a href="/public/js events.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a href="/public/aboutus.html"><i class="fa fa-fw fa-user"></i>About us</a></li>
+                <li><a href="/public/gymequipment.html"><i class="fa fa-fw fa-search"></i>Fitness Equipment's</a></li>
+                <li><a href="/public/subscription.html"><i class="fa fa-fw fa-user"></i>Subscription</a></li>
+                <li><a href="contactus.html"><i class="fa fa-fw fa-envelope"></i>Contact us</a></li>
+                <li><a href="/public/videos.html"><i class="fa fa-fw fa-user"></i>videos</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <br>
+        <br><p>read this quote carefully:-></p><p></p><bdo id="para" dir="rtl"><br>You are awsome</bdo>
+        <div id="cen" onclick="add()"><button>click me</button>
+        </div>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <!-- <button class="call">call us now</button> -->
+            <a href="tel:+918299288287" class="btn">Call Now</a>
+            <!-- <button class="btn">Email now</button> -->
+            <a href="mailto:alics87299288287@gmail.com" class="btn">Email Now</a>
+        </div>
+    </header>
+    <div class="container">
+        <button  onclick="window.print()">print this page</button>
+        <div></div>
+        <div id="r"><h1>REGISTER NOW</h1></div>
+        <!-- <h1>Register Now!</h1> -->
+        <form action="notation.php"></form>
+        <div class="formgroup">
+            
+            <!-- UPDATED YAHOO<input type="text" onclick="s()" id="a" onmouseout="mouseout()> -->
+            NAME<input id="a" type="text"  onclick="s()" onmouseout="mouseout()" placeholder="Enter your name"><div id="c"></div>
+                  <div id="c"></div>
+                  ADDRESS<input id="b" type="text"  onclick="t()" onmouseout="mouseout()" placeholder="Enter your name"><div id="c"></div>
+                  <div id="d"></div>
+                  PHONE NUMBER<input id="a" type="text"  onclick="s()" onmouseout="mouseout()" placeholder="Enter your name"><div id="c"></div>
+                  <div id="e"></div>
+                  ADHAAR CARD NUMBER<input id="a" type="text"  onclick="s()" onmouseout="mouseout()" placeholder="Enter your name"><div id="c"></div>
+                  <div id></div>
+                </div>
+            </div>
+</body>
+<script>
+    function s(){
+        // a=document.getElementById("a").style.color='red';
+        a=document.getElementById("a").style.border=" thick solid red",innerHeight="20px",innerWidth="20px";
+        // a.color='red';
+        // if (a!="thick solid red"){
+        //     // console.log('hlo')
+        //     a=document.getElementById("a");
+        //     alert("please fill all details");
+        // }
+        console.log(a);
+        // b=document.getElementById('a').
+    }
+    function t(){
+        // a=document.getElementById("a").style.color='red';
+        a=document.getElementById("b").style.border=" thick solid red",innerHeight="20px",innerWidth="20px";
+        // a.color='red';
+        // if (a!="thick solid red"){
+        //     // console.log('hlo')
+        //     a=document.getElementById("a");
+        //     alert("please fill all details");
+        // }
+        console.log(b);
+        // b=document.getElementById('a').
+    }
+    function mouseout(){
+        // alert();
+        b=document.getElementById('b').style.border="thick solid green";
+        console.log(b);
+        if (b=="thick solid green"){
+            d=document.getElementById('c').innerHTML="MANDATORY FIELD*",document.getElementById('c').style.color="red";
+            // d.style.color="red";
+        }
+        // alert('FILL THESE MANDATORY FIELDS');
+
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
